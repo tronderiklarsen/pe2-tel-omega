@@ -1,0 +1,156 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 16px;
+    flex: 1 0 auto;
+    max-width: 1440px;
+    min-width: 320px;
+
+    a {
+        text-decoration: none;
+        color: $color-main;
+    }
+
+    h1 {
+        font-family: $font-heading;
+        margin: 8px 0 16px 0;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-family: $font-heading;
+        margin: 8px 0 16px 0;
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+    .card-header {
+        margin: 8px 0 16px 0;
+    }
+
+    .card-body {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        flex-direction: row;
+
+        .card {
+            width: 30%;
+            margin-right: 16px;
+        }
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+    .card-header {
+        margin: 8px 0 16px 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .card {
+            width: 150px;
+            margin-right: 16px;
+        }
+        
+    }
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .controls {
+        a {
+            color: $color-red;
+        }
+    }
+
+    .card-image img {
+        width: 100%;
+    }
+
+    .card-header {
+        margin: 8px 0 16px 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .card-image img {
+            width: 25%;
+        }
+    }
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+
+    .card-image img {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    .card-header {
+        margin: 16px 0 16px 0;
+    }
+}
+
+hr {
+    margin-bottom: 32px;
+    color: $color-secondary;
+}
+
+.cart-total {
+    margin-bottom: 16px;
+}

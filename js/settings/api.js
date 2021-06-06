@@ -1,0 +1,1 @@
+export const baseUrl = "https://p2-tel-omega.herokuapp.com";

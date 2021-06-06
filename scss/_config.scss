@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap');
+
+$font-stack: 'Lato', sans-serif;
+$font-heading: 'Arvo', serif;
+
+$color-main: #121416;
+$color-secondary: #dee2e6;
+$color-green: #136F63;
+$color-yellow: #F9DC5C;
+$color-red: #971c35;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font-stack;
+    font-size: 16px;
+    color: $color-main;
+}

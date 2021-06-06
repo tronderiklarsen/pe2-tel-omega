@@ -1,0 +1,25 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border: 0.5px solid $color-secondary;
+    font-family: $font-stack;
+}
+
+label {
+    display: block;
+}
+
+#featured {
+    width: auto;
+    padding: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color-secondary;
+}
+
+.filter {
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 768px) {
+            width: 250px;
+    }
+}

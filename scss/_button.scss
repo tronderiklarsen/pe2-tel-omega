@@ -1,0 +1,49 @@
+button {
+    padding: 16px;
+    border: 1px solid $color-secondary;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@mixin btn-common {
+    color: $color-secondary;
+
+    &:hover {
+        background: white;
+        color: $color-green;
+        border: 1px solid $color-green;
+    }
+}
+
+.admin-login-btn {
+    margin-top: 32px;
+    background: $color-green;
+    @include btn-common;
+}
+
+.add {
+    background: $color-green;
+    @include btn-common;
+}
+
+.delete {
+    background: $color-red;
+    @include btn-common;
+}
+
+.update, .cart-btn, .checkout {
+    background: $color-green;
+    @include btn-common;
+}
+
+.details {
+    display: inline-block;
+    padding: 16px;
+    border: 1px solid $color-secondary;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
